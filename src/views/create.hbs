@@ -7,10 +7,7 @@
 			</h2>
 		</div>
 
-		<form
-			action="#"
-			method=""
-			class="createForm">
+		<form action="/movies/create" method="post" class="createForm">
 			<h2>Add Movie</h2>
 			<ul class="noBullet">
 				<li>
@@ -19,15 +16,12 @@
 						type="text"
 						class="inputFields"
 						id="title"
-						name=""
-						value="" />
+						name="title"
+					/>
 				</li>
 				<li>
 					<label for="category">Category:</label>
-					<select
-						id="category"
-						class="inputFields"
-						name="category">
+					<select id="category" class="inputFields" name="category">
 						<option value="">Select Category</option>
 						<option value="tv-show">TV Show</option>
 						<option value="animation">Animation</option>
@@ -42,8 +36,8 @@
 						type="text"
 						class="inputFields"
 						id="genre"
-						name=""
-						value="" />
+						name="genre"
+					/>
 				</li>
 				<li>
 					<label for="director">Director:</label>
@@ -51,17 +45,17 @@
 						type="text"
 						class="inputFields"
 						id="director"
-						name=""
-						value="" />
+						name="director"
+					/>
 				</li>
 				<li>
-					<label for="date">Year:</label>
+					<label for="year">Year:</label>
 					<input
 						type="number"
 						class="inputFields"
 						id="year"
-						name=""
-						value="" />
+						name="year"
+					/>
 				</li>
 				<li>
 					<label for="image">Movie Poster:</label>
@@ -69,24 +63,25 @@
 						type="text"
 						class="inputFields"
 						id="image"
-						name=""
-						value="" />
+						name="imageUrl"
+					/>
 				</li>
 				<li>
-					<label for="image">Rating:</label>
+					<label for="rating">Rating:</label>
 					<input
 						type="text"
 						class="inputFields"
 						id="rating"
-						name=""
-						value="" />
+						name="rating"
+					/>
 				</li>
 				<li>
 					<label for="description">Description:</label>
 					<textarea
 						id="description"
 						class="inputFields"
-						name="description"></textarea>
+						name="description"
+					></textarea>
 				</li>
 
 				<li id="center-btn">

@@ -14,11 +14,14 @@ app.engine(
 app.set("view engine", "hbs");
 app.set("views", "src/views");
 
-// Routes
-app.use(routes);
-
 // Setup middlewares
 app.use(express.static("src/public"));
+
+// Parse form data
+app.use(express.urlencoded({ extended: true }));
+
+// Routes
+app.use(routes);
 
 // Start server
 app.listen(5000, () =>
