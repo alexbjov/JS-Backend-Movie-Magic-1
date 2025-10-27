@@ -21,6 +21,7 @@
 	"homepage": "https://github.com/alexbjov/JS-Backend-Movie-Magic-1#readme",
 	"dependencies": {
 		"express": "^5.1.0",
-		"express-handlebars": "^8.0.2"
+		"express-handlebars": "^8.0.2",
+		"uuid": "^13.0.0"
 	}
 }
