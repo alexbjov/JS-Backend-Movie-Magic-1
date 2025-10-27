@@ -15,7 +15,7 @@ app.set("views", "src/views");
 
 // Routes
 app.get("/", (req, res) => {
-	res.render("home", { layout: false });
+	res.render("home");
 });
 
 // Setup middlewares
