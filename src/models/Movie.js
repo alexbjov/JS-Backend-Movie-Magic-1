@@ -40,6 +40,15 @@ const movies = [
 ];
 
 export default class Movie {
+	constructor(data) {
+		Object.assign(this, data);
+	}
+
+	save() {
+		movies.push(this);
+		return this;
+	}
+
 	static find() {
 		return movies.slice();
 	}
