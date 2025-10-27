@@ -1,0 +1,22 @@
+{
+	"name": "js-backend-movie-magic-1",
+	"version": "1.0.0",
+	"description": "Express JS and Templating Workshop",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "node --watch src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alexbjov/JS-Backend-Movie-Magic-1.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/alexbjov/JS-Backend-Movie-Magic-1/issues"
+	},
+	"homepage": "https://github.com/alexbjov/JS-Backend-Movie-Magic-1#readme"
+}
