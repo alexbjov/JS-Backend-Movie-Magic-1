@@ -1,5 +1,6 @@
 import express from "express";
 import handlebars from "express-handlebars";
+import homeController from "./controllers/homeController.js";
 
 const app = express();
 
@@ -14,13 +15,7 @@ app.set("view engine", "hbs");
 app.set("views", "src/views");
 
 // Routes
-app.get("/", (req, res) => {
-	res.render("home");
-});
-
-app.get("/about", (req, res) => {
-	res.render("about");
-});
+app.use(homeController);
 
 // Setup middlewares
 app.use(express.static("src/public"));
