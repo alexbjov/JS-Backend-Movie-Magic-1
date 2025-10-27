@@ -18,6 +18,9 @@ app.get("/", (req, res) => {
 	res.render("home", { layout: false });
 });
 
+// Setup middlewares
+app.use(express.static("src/public"));
+
 // Start server
 app.listen(5000, () =>
 	console.log("Server is listening on http://localhost:5000...")
