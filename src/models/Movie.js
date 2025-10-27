@@ -58,9 +58,27 @@ export default class Movie {
 
 	static find(filter = {}) {
 		let result = movies.slice();
+
 		if (filter._id) {
-			result = movies.filter((m) => m._id === filter._id);
+			result = result.filter((m) => m._id === filter._id);
 		}
+
+		if (filter.title) {
+			result = result.filter((m) =>
+				m.title.toLowerCase().includes(filter.title.toLowerCase())
+			);
+		}
+
+		if (filter.genre) {
+			result = result.filter(
+				(m) => m.genre.toLowerCase() === filter.genre.toLowerCase()
+			);
+		}
+
+		if (filter.year) {
+			result = result.filter((m) => m.year === filter.year);
+		}
+
 		return result;
 	}
 
