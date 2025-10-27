@@ -2,7 +2,7 @@ import { v4 as uuid } from "uuid";
 
 const movies = [
 	{
-		id: "a3682672-0ee4-1284-8759-35ee253329zv",
+		_id: "a3682672-0ee4-1284-8759-35ee253329zv",
 		title: "Jungle Cuise",
 		genre: "Adventure",
 		description:
@@ -14,7 +14,7 @@ const movies = [
 		category: "movie",
 	},
 	{
-		id: "z2682672-0ee4-1534-8759-35ee253329ty",
+		_id: "z2682672-0ee4-1534-8759-35ee253329ty",
 		title: "Man of Steel",
 		genre: "Superhero",
 		description:
@@ -27,7 +27,7 @@ const movies = [
 		category: "movie",
 	},
 	{
-		id: "81313c94-08e0-40bf-85bc-1e7cdeebbef9",
+		_id: "81313c94-08e0-40bf-85bc-1e7cdeebbef9",
 		title: "Avengers: Endgame",
 		category: "movie",
 		genre: "Superhero",
