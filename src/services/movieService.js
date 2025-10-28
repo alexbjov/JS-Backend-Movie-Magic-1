@@ -11,7 +11,6 @@ export default {
 
 	create(movieData) {
 		const movie = new Movie(movieData);
-		movie.save();
-		return movie;
+		return movie.save();
 	},
 };
