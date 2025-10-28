@@ -16,7 +16,10 @@ movieController.post("/create", (req, res) => {
 movieController.get("/:movieId/details", (req, res) => {
 	const movieId = req.params.movieId;
 	const movie = movieService.getOne(movieId);
-	res.render("details", { movie });
+
+	const ratingViewData = "&#x2605;".repeat(Math.floor(Number(movie.rating)));
+
+	res.render("details", { movie, rating: ratingViewData });
 });
 
 movieController.get("/search", (req, res) => {
